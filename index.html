@@ -2,17 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Katie Owen, Full Stack Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katie Owen</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
-  <section>
-    <h1>Katie Owen</h1>
-    <h3>Full Stack Web Developer</h3>
-    <p>Updated Portfolio Site coming soon...</p>
-    <p>For portfolio examples, email <a href="mailto:katherinehowen@gmail.com?Subject=Portfolio%20Examples" target="_top">me</a>.</p>
+  <header class="fix">
+    <nav>
+      <a class="brand" href="#intro">Katie Owen</a>
+      <ul>
+        <li id=""><a href="#about">About</a></li>
+        <li id=""><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="intro">
+    <div class="container">
+      <div class="main-title">
+        <h2>Katie Owen</h2>
+        <h5>Full Stack Web Developer</h5>
+      </div>
+    </div>
   </section>
+  <section id="about" class="bgW">
+    <div class="container">
+      <h3 class="title">About:</h3>
+      <div class="aboutContent">
+        <p>I am a multifaceted creative with a background in music, secondary through graduate level education, non profit management, and front end web development. Above all, I strive to always push myself by learning new skills and continually following my interests and passions.</p>
+        <p>I created my first website in 2006 while working as a freelance musician. Since then, I have encountered so many professional and personal projects requiring web development, content, and social media that I decided to take a course in Front End Web Development in 2014 to solidify my skill set. I found the course to be life changing, and I have been working full time in web development ever since.</p>
+      </div>
+      <div class="aboutContent">
+        <p>HTML5, CSS3, jQuery, javascript, MEAN, Ruby, Ruby on Rails, Sinatra, PostgreSQL, Mongo, Photoshop, Illustrator, Git. In addition to these skills, I have almost two years of full time experience as a front end developer.</p>
+        <p>Prior to starting the full time Web Development Immersive at General Assembly, I worked as a Front End Web Developer for a fast paced tech startup in Atlanta. This position included javascript, jQuery, HTML, CSS, Photoshop, and T-SQL. In this </p>
+      </div>
+      <div class="aboutContent">
+        <p>Front End Development hooked me because it gives me the same rush as a musical performance. One can spend the time to craft the code and end up with an application that is a creative output. The beauty lies in capturing a designer's vision from their mockup into a responsive, usable web application. I thrive under pressure, and I enjoy change.</p>
+        <p>I am a lifelong learner, and I enjoy the challenge of learning new skills. As I progressed as a front end developer, I kept running into the desire to make my own full stack applications. I have an internal drive to always excel and learn new skills.</p>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="bgW">
+    <div class="container">
+      <h3 class="title">Portfolio:</h3>
+        <div class="group">
+          <div class="longBox leftMargin" id="one">
+            <a href="https://github.com/khowen/kode_karma" target="_blank">
+              <span class="porfolioInfo">
+                <p class="name">SimplePart.com</p>
+                <p class="details">HTML5, CSS3, Materialize, Devise Gem, Ruby on Rails, PostgreSQL, Heroku, Photoshop</p>
+              </span>
+            </a>
+          </div>
+          <div class="row rightMargin top">
+            <div class="box" id="two">
+              <a href="http://www.simplepart.com" target="_blank">
+                <span class="porfolioInfo">
+                <p class="name">SimplePart.com</p>
+                <p class="details">HTML5, .NET, SQL, CSS3, jQuery, Javascript, Photoshop</p>
+                </span>
+              </a>
+            </div>
+            <div class="box" id="three">
+              <a href="http://khowen.github.io/shutTheBox/" target="_blank">
+              <span class="porfolioInfo">
+                <p class="name">Shut The Box</p>
+                <p class="details">HTML5, CSS3, jQuery, Javascript, Photoshop, Illustrator</p>
+                </span>
+              </a>
+            </div>
+            <div class="box" id="four">
+              <a href="http://www.lotuspartsdirect.com/" target="_blank">
+                <span class="porfolioInfo">
+                <p class="name">Lotus Parts Direct</p>
+                <p class="details">HTML, T-SQL, CSS, jQuery, Javascript, Photoshop</p>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="row rightMargin bottom">
+            <div class="box" id="five">
+              <a href="http://parts.landroverpalmbeach.com/" target="_blank">
+                <span class="porfolioInfo">
+                  <p class="name">Land Rover of West Palm Beach</p>
+                  <p class="details">HTML, T-SQL, CSS, jQuery, Javascript, Photoshop</p>
+                </span>
+              </a>
+            </div>
+            <div class="box2" id="six">
+              <a href="http://parts.jackingrammercedes.com/" target="_blank">
+              <span class="porfolioInfo">
+                <p class="name">Jack Ingram Mercedes</p>
+                <p class="details">HTML, T-SQL, CSS, jQuery, Javascript, Photoshop</p>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="longBox2" id="seven">
+            <a href="http://toyota.simplepart.com/" target="_blank">
+            <span class="porfolioInfo">
+              <p class="name">Toyota USA Corporate Site for SimplePart</p>
+              <p class="details">HTML, T-SQL, CSS, jQuery, Javascript, Photoshop</p>
+              </span>
+            </a>
+          </div>
+          <div class="row half rightMargin top">
+            <div class="box boxHalf" id="eight">
+              <a href="http://toyotaca.simplepart.com/" target="_blank">
+              <span class="porfolioInfo">
+                <p class="name">Toyota Canada Corporate Site for SimplePart</p>
+                <p class="details">HTML, T-SQL, CSS, jQuery, Javascript, Google Translate Plugin, Photoshop</p>
+                </span>
+              </a>
+            </div>
+            <div class="box boxHalf" id="nine">
+              <a href="http://www.midatlanticaudiparts.com/" target="_blank">
+              <span class="porfolioInfo">
+                <p class="name">Mid-Atlanta Audi</p>
+                <p class="details">HTML, T-SQL, CSS, jQuery, Javascript, Photoshop</p>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="row half rightMargin bottom">
+            <div class="box2 box2Full" id="ten">
+              <a href="https://nameless-crag-9310.herokuapp.com/" target="_blank">
+              <span class="porfolioInfo">
+                <p class="name">My Movies</p>
+                <p class="details">HTML5, CSS3, Materialize, Ruby on Rails, Devise gem, Heroku, PostgreSQL</p>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2016 K. Owen</p>
+  </footer>
 </body>
 </html>
+
 

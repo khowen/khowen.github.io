@@ -1,31 +1,25 @@
-var countries= document.getElementById("myChart").getContext("2d");
+$(document).ready(function() {
+    //scroll animation for sections
+    $('a[href^="#"]').on('click', function(e) {
+        var target = $(this).attr('href');
 
+        if( target.length ) {
+            e.preventDefault();
 
-var pieData = [
-    {
-        value: 300,
-        color:"#000",
-        highlight: "#000",
-        label: "Html/CSS"
-    },
-    {
-        value: 50,
-        color: "#ddd",
-        highlight: "#ddd",
-        label: "js"
-    },
-    {
-        value: 50,
-        color: "#333",
-        highlight: "#333",
-        label: "photoshop"
-    }
-]
+            $('html, body').animate({
+                scrollTop: $(target).offset().top || 0
+            }, 1000);
+        }
+    });
 
-var pieOptions = {
-  segmentShowStroke : false,
-  // animateScale : true,
-  responsive: true
-}
+    //hover states for portfolio
+    $('.row a, .longBox a, .longBox2 a').on('mouseenter',function(e) {
+        $(this).find('.porfolioInfo').show();
+        $(this).css('background', 'rgba(156, 35, 176, .8)');
+    });
 
-new Chart(countries).Pie(pieData, pieOptions);
+    $('.row a, .longBox a, .longBox2 a').on('mouseleave',function(e) {
+        $(this).find('.porfolioInfo').hide();
+        $(this).css('background' , 'none');
+    });
+});
