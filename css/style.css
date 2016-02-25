@@ -294,10 +294,13 @@ nav {
   display: none;
   height: 100%;
   width: 100%;
+}
+
+.activeInfo {
   background: #EB3349;
-  /*background: -webkit-linear-gradient(right, #EB3349, #F45C43);
+  background: -webkit-linear-gradient(right, #EB3349, #F45C43);
   background: -o-linear-gradient(right, #EB3349, #F45C43);
-  background: linear-gradient(to left, #EB3349, #F45C43);*/
+  background: linear-gradient(to left, #EB3349, #F45C43);
 }
 
 .porfolioInfo p {

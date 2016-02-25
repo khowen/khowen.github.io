@@ -15,11 +15,11 @@ $(document).ready(function() {
     //hover states for portfolio
     $('.row a, .longBox a, .longBox2 a').on('mouseenter',function(e) {
         $(this).find('.porfolioInfo').show();
-        $(this).css('background', 'rgba(156, 35, 176, .8)');
+        $(this).addClass('activeInfo');
     });
 
     $('.row a, .longBox a, .longBox2 a').on('mouseleave',function(e) {
         $(this).find('.porfolioInfo').hide();
-        $(this).css('background' , 'none');
+        $(this).removeClass('activeInfo');
     });
 });
