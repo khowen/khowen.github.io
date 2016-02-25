@@ -129,10 +129,14 @@ nav {
   text-align: center;
   color: #222;
   background-color: #333;
-  /*background-image: url('../img/background.jpg');*/
+  background-image: url('../img/background.jpg');
   font-size: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: top;
+}
+
+#intro:hover {
+  background-image: url('../img/backgroundHover.jpg');
 }
 
 #intro .container {
@@ -277,7 +281,6 @@ nav {
 .porfolioInfo {
   width: 90%;
   height: 100%;
-  background-color: #F44336;
   text-align: center;
   color: #fff;
   overflow: hidden;
@@ -286,6 +289,10 @@ nav {
   display: none;
   height: 100%;
   width: 100%;
+  background: #EB3349;
+  background: -webkit-linear-gradient(right, #EB3349, #F45C43);
+  background: -o-linear-gradient(right, #EB3349, #F45C43);
+  background: linear-gradient(to left, #EB3349, #F45C43);
 }
 
 .porfolioInfo p {
