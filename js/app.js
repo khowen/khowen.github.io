@@ -10,16 +10,20 @@ $(document).ready(function() {
                 scrollTop: $(target).offset().top || 0
             }, 1000);
         }
+
+        // if('#about' || '#portfolio') {
+        //     $('.fix').addClass('active');
+        // }
     });
 
     //hover states for portfolio
     $('.row a, .longBox a, .longBox2 a').on('mouseenter',function(e) {
         $(this).find('.porfolioInfo').show();
-        $(this).addClass('activeInfo');
+        $(this).addClass('active');
     });
 
     $('.row a, .longBox a, .longBox2 a').on('mouseleave',function(e) {
         $(this).find('.porfolioInfo').hide();
-        $(this).removeClass('activeInfo');
+        $(this).removeClass('active');
     });
 });
